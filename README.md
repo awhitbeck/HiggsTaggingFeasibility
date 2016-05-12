@@ -26,7 +26,7 @@ The script `combineCards.py` takes a list of datacards as arguments and merges t
 To save this output, you should redirect the resulting datacard to the file of your choice.  The inputs can be directed to the script using 
 your shell's wildcard:
 
-combineCards.py myInputs_bin*.txt > myOutput.txt
+`combineCards.py myInputs_bin*.txt > myOutput.txt`
 
 ### Expected upper limit
 
@@ -37,12 +37,12 @@ the `Asymptotic` method for limits.  To generate an expected limit, you should t
 
 An example of computing the expected UL would be:
 
-combine -M Asymptotic myDatacard.txt -t -1
+`combine -M Asymptotic myDatacard.txt -t -1`
 
 ### Expected Significance
 
 For significance, I typically use the `ProfileLikelihood` method.  To get the expected significance assume the signal really exists, you 
 should also tell combine that you want to inject signal into your asimov dataset `expectSignal=1`.  An example of this would be
 
-combine -M ProfileLikelihood myDatacard.txt -t -1 --expectSignal=1
+`combine -M ProfileLikelihood myDatacard.txt -t -1 --expectSignal=1`
 
