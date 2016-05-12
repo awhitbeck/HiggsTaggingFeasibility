@@ -1,0 +1,18 @@
+# - - - - - - - - - - - - - - - - - - - 
+# Datacard 
+# - - - - - - - - - - - - - - - - - - - 
+imax 1  number of channels
+jmax 4  number of backgrounds
+# - - - - - - - - - - - - - - - - - - - 
+bin 5
+observation 1
+# - - - - - - - - - - - - - - - - - - - 
+bin 5 5 5 5 5
+process ZJetsToNuNu WJetsToLNu QCD TTJets mLSP1550
+process 4 3 2 1 0
+rate 19.17582 6.76305 9.05478 4.09506 0.2473389
+# - - - - - - - - - - - - - - - - - - - 
+ttbarUnc_bin5 lnN - - - 1.2 - 
+wjetsUnc_bin5 lnN - 1.2 - - - 
+zjetsUnc_bin5 lnN 1.2 - - - - 
+QCDUnc_bin5 lnN - - 1.2 - - 
